@@ -1,3 +1,6 @@
+# react-electron-boilerplate
+Demo project adding electron into a react-app and getting them working side by side. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
