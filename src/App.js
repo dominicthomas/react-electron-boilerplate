@@ -1,8 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import lifecycle from "react-pure-lifecycle";
 
-function App() {
+import logo from "./logo.svg";
+import "./App.css";
+
+const methods = {
+  componentDidMount(props) {
+    alert("Welcome!");
+  }
+};
+
+const App = ({ props }) => {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +29,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
-export default App;
+export default lifecycle(methods)(App);
